@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Graphik;
+    src: url(../fonts/graphik/graphik-regular/GraphikRegular.otf)
+        format("embedded-opentype"),
+      url(../fonts/graphik/graphik-regular/GraphikRegular.woff) format("woff"),
+      url(../fonts/graphik/graphik-regular/GraphikRegular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+@font-face {
+    font-family: Graphik;
+    src: url(../fonts/graphik/graphik-semibold/GraphikSemibold.otf)
+        format("embedded-opentype"),
+      url(../fonts/graphik/graphik-semibold/GraphikSemibold.woff) format("woff"),
+      url(../fonts/graphik/graphik-semibold/GraphikSemibold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }

@@ -1,0 +1,15 @@
+@use 'reset';
+@use 'variables';
+@use 'fonts';
+@use 'mixins';
+@use 'common';
+
+
+
+  .btn {
+    background-color: var(--primary-button);
+    font-family: Graphik;
+    font-size: var(--primary-button-font-size);
+    color: #fff;
+    line-height: 5;
+  }
