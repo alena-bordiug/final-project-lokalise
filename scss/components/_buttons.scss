@@ -1,7 +1,21 @@
 .header-btn {
 
-    &-btn {
+    .btn-s {
         width: 120px;
         height: 45px;
+        border: none;
+        cursor: pointer;
     }
+
+&-login {
+    outline: var(--outline-btn-border);
+    color: var(--primary-text-color);
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+&-try {
+    background-color: var(--primary-color);
+    color: #fff;
+}
 }
