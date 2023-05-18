@@ -1,15 +1,9 @@
-@use 'reset';
-@use 'variables';
-@use 'fonts';
-@use 'mixins';
-@use 'common';
+// @use '../scss/base/reset';
+// @use '../scss/base/normalize';
+@use '../scss/base/fonts';
+@use '../scss/abstracts/variables';
+@use '../scss/abstracts/mixins';
+@use '../scss/layout.scss/common';
+@use '../scss/layout.scss/header';
+@use '../scss/components/buttons';
 
-
-
-  .btn {
-    background-color: var(--primary-button);
-    font-family: Graphik;
-    font-size: var(--primary-button-font-size);
-    color: #fff;
-    line-height: 5;
-  }
