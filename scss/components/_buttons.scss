@@ -7,30 +7,24 @@
 }
 
 .btn-s {
-    width: 120px;
-    height: 45px;
-  }
+  width: 120px;
+  height: 45px;
+}
 
-  .btn-l {
+.btn-l {
   width: 160px;
   height: 60px;
 }
 
-  .btn-login {
-    @include font(16, 20, 600);
-    outline: var(--outline-btn-stroke);
-    color: var(--primary-text-color);
-    margin-right: 10px;
-    background-color: var(--primary-btn-color-white);
-  }
+.btn-outline {
+  @include font(16, 20, 600);
+  outline: var(--primary-btn-outline-stroke);
+  color: var(--primary-text-color);
+  background-color: var(--primary-btn-color-white);
+}
 
-  .btn-try {
-    @include font(16, 20, 600);
-    background-color: var(--primary-btn-color);
-    color: var(--primary-btn-color-white);
-  }
-
-
-
-
-
+.btn-contained {
+  @include font(16, 20, 600);
+  background-color: var(--primary-btn-color);
+  color: var(--primary-btn-color-white);
+}
