@@ -1,6 +1,12 @@
-@mixin font ($fs, $lh, $fw:normal) {
-    font-size: $fs + px;
-    line-height: $lh/$fs;
-    font-weight: $fw;
+@mixin font($fs, $lh, $fw: normal) {
+  font-size: $fs + px;
+  line-height: $lh/$fs;
+  font-weight: $fw;
 }
 
+
+@mixin flex($justify-content){
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
+}

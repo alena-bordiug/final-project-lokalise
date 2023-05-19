@@ -1,0 +1,47 @@
+@use "../abstracts/mixins" as *;
+
+.hero-section {
+  @include flex(center);
+  padding-top: 97px;
+  margin-bottom: 198px;
+}
+
+.hero-content {
+  width: 560px;
+
+  &-heading {
+    width: 552px;
+    @include font(65, 70, 600);
+    color: var(--primary-h1-color);
+    margin-bottom: 51px;
+  }
+
+  &-paragraph {
+    width: 471px;
+    @include font(25, 35);
+    color: var(--primary-text-color);
+    margin-bottom: 51px;
+  }
+
+  &-buttons {
+    margin-bottom: 25px;
+    .btn-try {
+        margin-right: 10px
+    }
+  }
+
+  &-comment {
+    @include font(15, 25);
+    color: var(--primary-text-color);
+  }
+}
+
+.hero-picture {
+  width: 759px;
+  min-height: 529px;
+  
+
+  &-image {
+    width: 100%;
+  }
+}

@@ -1,28 +1,36 @@
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 .btn {
-font-family: Graphik;
+  font-family: Graphik;
+  border: none;
+  cursor: pointer;
 }
 
-.header-btn {
-  .btn-s {
+.btn-s {
     width: 120px;
     height: 45px;
-    border: none;
-    cursor: pointer;
   }
 
-  &-login {
-    @include font (16, 20, 600);
-    outline: var(--outline-btn-border);
+  .btn-l {
+  width: 160px;
+  height: 60px;
+}
+
+  .btn-login {
+    @include font(16, 20, 600);
+    outline: var(--outline-btn-stroke);
     color: var(--primary-text-color);
     margin-right: 10px;
     background-color: var(--primary-btn-color-white);
   }
 
-  &-try {
-    @include font (16, 20, 600);
+  .btn-try {
+    @include font(16, 20, 600);
     background-color: var(--primary-btn-color);
     color: var(--primary-btn-color-white);
   }
-}
+
+
+
+
+
