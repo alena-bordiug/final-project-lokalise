@@ -1,17 +1,14 @@
 :root {
-
-  // layout 
-    --primary-color: #FF9C7D;
-    --secondary-color: #FFF8E4;
+  // layout
+  --primary-color: #ff9c7d;
+  --secondary-color: #fff8e4;
 
   // buttons
-    --primary-btn-color: #FF6336;
-    --outline-btn-color: #fff;
-    --outline-btn-border: 1px solid #000;
+  --primary-btn-color: #ff6336;
+  --primary-btn-color-white: #fff;
+  --outline-btn-border: 1px solid #000;
 
   // text
---header-link: #000;
---primary-text-color:#000;
-
-  } 
-
+  --header-link: #000;
+  --primary-text-color: #000;
+}
