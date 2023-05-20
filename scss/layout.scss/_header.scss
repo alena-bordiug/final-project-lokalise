@@ -48,6 +48,8 @@
   }
 }
 
+// media
+
 @include tablet {
   .container {
     max-width: 1250px;
@@ -71,21 +73,21 @@
     height: 28px;
     @include flex(space-between);
     flex-direction: column;
-  }
 
-  .burger-icon::before,
-  .burger-icon::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 4px;
-    background: var(--primary-burger-btn-color);
-  }
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      background: var(--primary-burger-btn-color);
+    }
 
-  .burger-icon-inner {
-    display: block;
-    width: 40px;
-    height: 4px;
-    background: var(--primary-burger-btn-color);
+    &-inner {
+      display: block;
+      width: 40px;
+      height: 4px;
+      background: var(--primary-burger-btn-color);
+    }
   }
 }
