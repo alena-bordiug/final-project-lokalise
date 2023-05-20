@@ -3,8 +3,9 @@
 @use '../scss/base/fonts';
 @use '../scss/abstracts/variables';
 @use '../scss/abstracts/mixins';
-@use '../scss/layout.scss/common';
-@use '../scss/layout.scss/header';
+@use '../scss/layouts/common';
+@use '../scss/layouts/header';
+@use '../scss/layouts/hero';
 @use '../scss/components/buttons';
-@use '../scss/layout.scss/hero';
+
 
