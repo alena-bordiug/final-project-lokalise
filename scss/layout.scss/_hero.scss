@@ -7,7 +7,7 @@
 }
 
 .hero-content {
-  width: 560px;
+  max-width: 560px;
 
   &-heading {
     width: 552px;
@@ -37,10 +37,10 @@
 }
 
 .hero-picture {
-  width: 759px;
-  min-height: 529px;
+  width: 739px;
+  min-height: 509px;
   
-  &-image {
+  img {
     width: 100%;
   }
 }

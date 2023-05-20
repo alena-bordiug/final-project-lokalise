@@ -10,3 +10,12 @@
     align-items: center;
     justify-content: $justify-content;
 }
+
+
+// media
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}

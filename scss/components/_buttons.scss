@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as *;
 
 .btn {
-  font-family: Graphik;
+  font-family: Graphik, sans-serif;
   border: none;
   cursor: pointer;
 }

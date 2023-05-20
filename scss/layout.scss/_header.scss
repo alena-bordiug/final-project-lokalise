@@ -20,14 +20,13 @@
     width: 100%;
     max-width: 130px;
     height: 28px;
-    margin-right: 51px;
+    margin-right: 52px;
 
     &:hover {
-      opacity: 0.6;
+      opacity: 0.8;
     }
   }
   &-list {
-    width: 100%;
     @include flex(center);
   }
 
@@ -46,5 +45,47 @@
 .header-buttons {
   .btn-outline {
     margin-right: 10px;
+  }
+}
+
+@include tablet {
+  .container {
+    max-width: 1250px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-buttons {
+    .btn-outline,
+    .btn-contained {
+      display: none;
+    }
+  }
+
+  .burger-icon {
+    border: none;
+    background: none;
+    width: 40px;
+    height: 28px;
+    @include flex(space-between);
+    flex-direction: column;
+  }
+
+  .burger-icon::before,
+  .burger-icon::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--primary-burger-btn-color);
+  }
+
+  .burger-icon-inner {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--primary-burger-btn-color);
   }
 }
