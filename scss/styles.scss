@@ -1,12 +1,14 @@
-// @use '../scss/base/reset';
-// @use '../scss/base/normalize';
-@use '../scss/base/fonts';
-@use '../scss/abstracts/variables';
-@use '../scss/abstracts/mixins';
-@use '../scss/layouts/common';
-@use '../scss/layouts/header';
-@use '../scss/layouts/hero';
-@use '../scss/layouts/companies';
-@use '../scss/components/buttons';
+@import '../scss/base/reset';
+@import '../scss/base/normalize';
+
+@import '../scss/base/fonts';
+@import '../scss/abstracts/variables';
+@import '../scss/abstracts/mixins';
+@import '../scss/components/buttons';
+@import '../scss/layouts/common';
+@import '../scss/layouts/header';
+@import '../scss/layouts/hero';
+@import '../scss/layouts/companies';
+
 
 
