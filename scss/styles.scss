@@ -1,14 +1,20 @@
-@import '../scss/base/reset';
-@import '../scss/base/normalize';
+@import './base/reset';
+@import './base/normalize';
 
-@import '../scss/base/fonts';
-@import '../scss/abstracts/variables';
-@import '../scss/abstracts/mixins';
-@import '../scss/components/buttons';
-@import '../scss/layouts/common';
-@import '../scss/layouts/header';
-@import '../scss/layouts/hero';
-@import '../scss/layouts/companies';
+@import './base/fonts';
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './components/buttons';
+
+@import './layouts/common';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/companies';
+@import './layouts/products';
+
+
 
 
 

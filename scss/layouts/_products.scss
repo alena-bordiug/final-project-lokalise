@@ -1,0 +1,35 @@
+.product {
+    @include flex(space-between);
+    margin-bottom: 255px;
+    
+}
+
+.product-content {
+  max-width: 493px;
+
+  &-heading {
+    @include font(50, 60, 600);
+    color: var(--primary-text-color);
+    margin-bottom: 80px;
+  }
+
+  &-paragraph {
+    @include font(20, 30);
+    color: var(--primary-text-color);
+    margin-bottom: 100px;
+  }
+
+  &-button {
+    @include font(20, 30, 600);
+  }
+}
+
+.product-picture {
+  max-width: 632px;
+  min-height: 632px;
+
+  img {
+    width: 100%;
+  }
+}
+

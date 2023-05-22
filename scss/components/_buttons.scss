@@ -1,4 +1,4 @@
-@use "../abstracts/mixins" as *;
+// @use "../abstracts/mixins" as *;
 
 
 .btn {
@@ -28,4 +28,10 @@
   @include font(16, 20, 600);
   background-color: var(--primary-btn-color);
   color: var(--primary-btn-color-white);
+}
+
+.btn-link {
+  @include font(20, 30, 600);
+  color: var(--primary-link-btn-color) ;
+  background-color: var(--primary-btn-color-white);
 }
