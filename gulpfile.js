@@ -1,11 +1,12 @@
 let gulp        = require('gulp'),
     browserSync = require('browser-sync').create(),
-    sass        = require('gulp-sass'),
     cleanCSS    = require('gulp-clean-css');
 
 // Compile sass into CSS & auto-inject into browsers
+
+const sass = require('gulp-sass')(require('sass'));
 gulp.task('sass', function() {
-    return gulp.src("./scss/*.scss")
+    return gulp.src("./scss/**/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("./css"))
         .pipe(browserSync.stream());
@@ -24,7 +25,7 @@ gulp.task('serve', gulp.series('sass', function() {
         server: "./"
     });
 
-    gulp.watch("./scss/*.scss", gulp.series('sass', 'minify-css'));
+    gulp.watch("./scss/**/*.scss", gulp.series('sass', 'minify-css'));
     gulp.watch("./*.html").on('change', browserSync.reload);
 }));
 
