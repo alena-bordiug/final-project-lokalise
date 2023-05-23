@@ -1,18 +1,24 @@
 @use "../abstracts/mixins" as *;
 
+.products-section {
+  margin-bottom: 150px;
+}
+
 .product {
-    @include flex(space-between);
+  @include flex(space-between);
+
+  &:not(:last-child) {
     margin-bottom: 255px;
-    
+  }
 }
 
 .product-content {
-  max-width: 493px;
+  max-width: 500px;
 
   &-heading {
     @include font(50, 60, 600);
     color: var(--primary-text-color);
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   &-paragraph {
@@ -26,6 +32,10 @@
   }
 }
 
+.paragraph-link {
+  color: var(--primary-paragraph-link);
+}
+
 .product-picture {
   max-width: 632px;
   min-height: 632px;
@@ -34,4 +44,3 @@
     width: 100%;
   }
 }
-

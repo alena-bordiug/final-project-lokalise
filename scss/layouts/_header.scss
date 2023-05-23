@@ -32,7 +32,6 @@
   }
 
   &-item {
-    
     &:not(:last-child) {
       margin-right: 52px;
     }
@@ -41,6 +40,7 @@
   &-link {
     @include font(15, 20);
     color: var(--header-link-color);
+    text-decoration: none;
   }
 }
 
@@ -73,8 +73,8 @@
     background: none;
     width: 40px;
     height: 28px;
-    @include flex(space-between);
-    flex-direction: column;
+    @include flex(space-between, column);
+    
 
     &::before,
     &::after {

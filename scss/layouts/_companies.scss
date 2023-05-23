@@ -9,8 +9,8 @@
 
 .companies-inner {
   padding-top: 100px;
-  @include flex(center);
-  flex-direction: column;
+  @include flex(center, column);
+
 
   &-heading {
     @include font(50, 60, 600);

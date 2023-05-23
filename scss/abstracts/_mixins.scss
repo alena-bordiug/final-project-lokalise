@@ -1,14 +1,15 @@
 @mixin font($fs, $lh, $fw: normal) {
   font-size: $fs + px;
-  line-height: $lh/$fs;
+  line-height: calc($lh/$fs);
   font-weight: $fw;
 }
 
 
-@mixin flex($justify-content){
+@mixin flex($justify-content, $flex-direction:row){
     display: flex;
     align-items: center;
     justify-content: $justify-content;
+    flex-direction: $flex-direction;
 }
 
 
