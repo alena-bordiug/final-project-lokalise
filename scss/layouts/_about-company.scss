@@ -1,0 +1,76 @@
+@use "../abstracts/mixins" as *;
+
+.lokalise-history {
+  width: 100%;
+  min-height: 468px;
+  background-color: #c9e8f2;
+  @include flex(center);
+}
+
+.lokalise-history-inner {
+  @include flex(center);
+}
+
+.lokalise-history-content {
+  max-width: 922px;
+
+  &-paragraph {
+    @include font(30, 40);
+    margin-bottom: 33px;
+    color: var(--primary-text-color);
+  }
+
+  &-name {
+    display: inline-block;
+    @include font(15, 25);
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+  }
+
+  &-logo {
+    width: 116px;
+    height: 25px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.lokalise-history-photo {
+  max-width: 310px;
+  height: 310px;
+  img {
+    width: 100%;
+  }
+}
+
+// reviews
+
+.reviews {
+  width: 100%;
+  min-height: 332px;
+  background-color: #dabc98;
+  margin-bottom: 150px;
+}
+
+.review-inner {
+    @include flex(center);
+}
+
+
+
+.reviews-inner-title {
+  @include font(35, 50, 600);
+  width: 461px;
+}
+
+.reviews-inner-logos {
+  @include flex(space-around);
+  border-left: 1px solid #000;
+  max-width: 481px;
+}
+
+.c-logo,
+.captura-logo {
+  display: block;
+}

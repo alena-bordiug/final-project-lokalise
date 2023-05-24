@@ -1,4 +1,4 @@
-// @use "../abstracts/mixins" as *;
+@use "../abstracts/mixins" as *;
 
 
 .btn {
@@ -30,8 +30,16 @@
   color: var(--primary-btn-color-white);
 }
 
-.btn-link {
+.text-btn {
   @include font(20, 30, 600);
-  color: var(--primary-link-btn-color) ;
-  background-color: var(--primary-btn-color-white);
+  color: var(--primary-text-btn-color) ;
+  background-color: transparent;
+}
+
+
+.text-btn-underlined {
+   @include font(20, 30);
+  color: var(--primary-text-btn-color) ;
+  background-color: transparent;
+  text-decoration: underline;
 }

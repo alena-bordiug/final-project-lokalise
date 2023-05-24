@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as *;
+
+.footer {
+    width: 100%;
+    min-height: 900px;
+    background-color: var(--footer-bg-color) ;
+}
