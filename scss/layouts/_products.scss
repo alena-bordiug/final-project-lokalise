@@ -26,11 +26,6 @@
     color: var(--primary-text-color);
     margin-bottom: 30px;
   }
-
-  &-button {
-    @include font(20, 30, 600);
-    
-  }
 }
 
 .paragraph-link {

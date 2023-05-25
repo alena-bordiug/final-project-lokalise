@@ -10,7 +10,7 @@
   max-width: 560px;
 
   &-heading {
-    max-width: 552px;
+    width: 552px;
     @include font(65, 70, 600);
     color: var(--primary-h1-color);
     margin-bottom: 51px;
@@ -37,7 +37,7 @@
 }
 
 .hero-picture {
-  max-width: 739px;
+  width: 739px;
   min-height: 509px;
   
   img {

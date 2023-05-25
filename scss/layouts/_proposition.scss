@@ -23,12 +23,8 @@
     @include font(20, 30);
     margin-bottom: 54px;
   }
-
-  &-btn {
-    width: 160px;
-    height: 60px;
-    background-color: #000;
-  }
-
 }
 
+.propose-btn {
+  background-color: var(--primary-btn-color-black);
+}

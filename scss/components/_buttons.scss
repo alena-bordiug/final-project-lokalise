@@ -1,49 +1,55 @@
 @use "../abstracts/mixins" as *;
 
-
 .btn {
   font-family: Graphik, sans-serif;
   border: none;
+  display: inline-block;
   cursor: pointer;
 }
 
 .btn-s {
+  @include font(16, 45, 600);
   width: 120px;
-  height: 45px;
+  min-height: 45px;
+}
+
+.btn-m {
+@include font(16, 60, 600);
+  width: 160px;
+  min-height: 60px;
 }
 
 .btn-l {
-  width: 160px;
-  height: 60px;
+  @include font(16, 60, 600);
+  width: 193px;
+  min-height: 60px;
 }
 
 .btn-outline {
-  @include font(16, 20, 600);
-  outline: var(--primary-btn-outline-stroke);
-  color: var(--primary-text-color);
+  border: var(--primary-btn-outline-stroke);
+  color: var(--primary-text-btn-color);
   background-color: var(--primary-btn-color-white);
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn-contained {
-  @include font(16, 20, 600);
   background-color: var(--primary-btn-color);
   color: var(--primary-btn-color-white);
   text-decoration: none;
   text-align: center;
-  padding: 20px 0;
-  display: inline-block;
 }
 
 .text-btn {
   @include font(20, 30, 600);
-  color: var(--primary-text-btn-color) ;
+  color: var(--primary-text-btn-color);
   background-color: transparent;
   text-decoration: none;
 }
 
 .text-btn-underlined {
-   @include font(20, 30);
-  color: var(--primary-text-btn-color) ;
+  @include font(20, 30);
+  color: var(--primary-text-btn-color);
   background-color: transparent;
   text-decoration: underline;
 }

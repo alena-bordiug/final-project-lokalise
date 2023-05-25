@@ -51,26 +51,44 @@
   min-height: 332px;
   background-color: #dabc98;
   margin-bottom: 150px;
+  display: flex;
+  align-items: center;
 }
 
-.review-inner {
-    @include flex(center);
-}
+.reviews-inner {
+display: flex;
 
+justify-content: center;
 
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 704px;
+    min-height: 168px;
+    margin-right: 125px;
+  }
 
-.reviews-inner-title {
-  @include font(35, 50, 600);
-  width: 461px;
-}
+  &-image {
+    width: 176px;
 
-.reviews-inner-logos {
-  @include flex(space-around);
-  border-left: 1px solid #000;
-  max-width: 481px;
-}
+    img {
+      width: 100%;
+    }
+  }
 
-.c-logo,
-.captura-logo {
-  display: block;
+  &-heading {
+    @include font(35, 50, 600);
+    color: var(--primary-text-color);
+    width: 461px;
+  }
+
+  &-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid #000;
+    width: 481px;
+    min-height: 168px;
+  }
 }

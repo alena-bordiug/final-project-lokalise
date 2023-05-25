@@ -2,14 +2,13 @@
 
 .benefit-section {
   width: 100%;
-  min-height: 1033px;
+  // min-height: 1033px;
   background-color: var(--secondary-color);
   margin-bottom: 150px;
 }
 
 .benefit-inner {
-  padding-top: 120px;
-
+  padding: 120px 0;
   &-items {
   @include flex(space-between);
   flex-wrap: wrap;

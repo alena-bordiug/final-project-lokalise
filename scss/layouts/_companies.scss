@@ -2,13 +2,13 @@
 
 .companies-section {
   width: 100%;
-  min-height: 455px;
+  // min-height: 455px;
   margin-bottom: 90px;
   background-color: var(--primary-color);
 }
 
 .companies-inner {
-  padding-top: 100px;
+  padding: 100px 0;
   @include flex(center, column);
 
 
@@ -16,7 +16,7 @@
     @include font(50, 60, 600);
     text-align: center;
     color: var(--primary-text-color);
-    max-width: 720px;
+    width: 720px;
     margin-bottom: 70px;
   }
 

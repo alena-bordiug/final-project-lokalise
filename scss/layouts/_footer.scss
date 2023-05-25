@@ -52,6 +52,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   &-list {
     width: 187px;
