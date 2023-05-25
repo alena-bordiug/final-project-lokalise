@@ -1,7 +1,109 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
-    width: 100%;
-    min-height: 900px;
-    background-color: var(--footer-bg-color) ;
+  width: 100%;
+  min-height: 900px;
+  padding-top: 98px;
+  background-color: var(--footer-bg-color);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 95px;
+  border-bottom: 1px solid #000;
+}
+
+.footer-column {
+  max-width: 300px;
+
+  &-heading {
+    @include font(40, 50, 600);
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+  }
+
+  &-picture {
+    width: 300px;
+    margin-bottom: 31px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &-logo {
+    width: 80px;
+    margin-bottom: 11px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &-paragraph {
+    display: inline-block;
+    @include font(20, 30);
+    color: var(--primary-text-color);
+    margin-bottom: 15px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &-list {
+    width: 187px;
+  }
+
+  &-title {
+    @include font(20, 25, 600);
+    margin-bottom: 21px;
+  }
+
+  &-item {
+    margin-bottom: 15px;
+  }
+
+  &-link {
+    @include font(15, 15);
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+}
+
+.footer-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 53px;
+  margin-bottom: 43px;
+
+
+  &-info {
+    width: 411px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-logo {
+    width: 90px;
+    margin-right: 14px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &-paragraph {
+    @include font(12, 15);
+    color: var(--primary-text-color);
+    width: 311px;
+  }
+}
+
+.footer-copyright-content {
+    display: block;
+    @include font(12, 15);
+    color: var(--primary-text-color);
 }

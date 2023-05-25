@@ -28,14 +28,18 @@
   @include font(16, 20, 600);
   background-color: var(--primary-btn-color);
   color: var(--primary-btn-color-white);
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: inline-block;
 }
 
 .text-btn {
   @include font(20, 30, 600);
   color: var(--primary-text-btn-color) ;
   background-color: transparent;
+  text-decoration: none;
 }
-
 
 .text-btn-underlined {
    @include font(20, 30);
