@@ -2,11 +2,14 @@
 
 .integration-inner {
   margin-bottom: 150px;
-  @include flex(center, column);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &-heading {
     @include font(65, 75, 600);
-    color: var(--primary-text-color);
+    color: var(--primary-heading-color);
     max-width: 791px;
     text-align: center;
   }
@@ -21,15 +24,10 @@
   }
 
   &-image {
-    width: 1023px;
-    height: 445px;
+    max-width: 1023px;
     margin-bottom: 32px;
-    img {width: 100%;}
-  }
-
-  &-btn {
-   
-    width: 193px;
-  
+    img {
+      width: 100%;
+    }
   }
 }

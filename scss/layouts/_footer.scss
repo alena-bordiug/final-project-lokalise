@@ -2,16 +2,14 @@
 
 .footer {
   width: 100%;
-  min-height: 900px;
-  padding-top: 98px;
   background-color: var(--footer-bg-color);
 }
 
 .footer-inner {
+  padding: 98px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 95px;
   border-bottom: 1px solid #000;
 }
 
@@ -75,12 +73,10 @@
 }
 
 .footer-holder {
+  padding: 48px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 53px;
-  margin-bottom: 43px;
-
 
   &-info {
     width: 411px;
@@ -104,7 +100,7 @@
 }
 
 .footer-copyright-content {
-    display: block;
-    @include font(12, 15);
-    color: var(--primary-text-color);
+  display: block;
+  @include font(12, 15);
+  color: var(--primary-text-color);
 }

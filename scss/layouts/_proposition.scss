@@ -2,17 +2,19 @@
 
 .proposition-section {
   width: 100%;
-  min-height: 603px;
   background-color: var(--primary-color);
-@include flex(center);
 }
 
 .proposition-inner {
- @include flex(center,column);
+  padding: 119px 0 334px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &-heading {
     @include font(65, 75, 600);
-    color: var(--primary-text-color);
+    color: var(--primary-heading-color);
     max-width: 784px;
     text-align: center;
     margin-bottom: 29px;
@@ -23,8 +25,8 @@
     @include font(20, 30);
     margin-bottom: 54px;
   }
-}
 
-.propose-btn {
-  background-color: var(--primary-btn-color-black);
+  & .btn-contained {
+    background-color: var(--primary-btn-color-black);
+  }
 }

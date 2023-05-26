@@ -2,13 +2,14 @@
 
 .lokalise-history {
   width: 100%;
-  min-height: 468px;
   background-color: #c9e8f2;
-  @include flex(center);
 }
 
 .lokalise-history-inner {
-  @include flex(center);
+  padding: 53px 0 105px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lokalise-history-content {
@@ -38,7 +39,6 @@
 
 .lokalise-history-photo {
   max-width: 310px;
-  height: 310px;
   img {
     width: 100%;
   }
@@ -48,30 +48,27 @@
 
 .reviews {
   width: 100%;
-  min-height: 332px;
   background-color: #dabc98;
   margin-bottom: 150px;
-  display: flex;
-  align-items: center;
 }
 
 .reviews-inner {
-display: flex;
-
-justify-content: center;
+  padding: 80px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   &-title {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 704px;
-    min-height: 168px;
-    margin-right: 125px;
+    margin-right: 124px;
+    max-width: 704px;
   }
 
   &-image {
-    width: 176px;
-
+    max-width: 176px;
+    margin-right: 50px;
     img {
       width: 100%;
     }
@@ -89,6 +86,6 @@ justify-content: center;
     align-items: center;
     border-left: 1px solid #000;
     width: 481px;
-    min-height: 168px;
+    
   }
 }

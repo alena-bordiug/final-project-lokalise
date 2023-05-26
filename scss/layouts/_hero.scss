@@ -1,23 +1,25 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section {
-  @include flex(center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 97px;
   margin-bottom: 198px;
 }
 
 .hero-content {
-  max-width: 560px;
+  width: 560px;
 
   &-heading {
     width: 552px;
-    @include font(65, 70, 600);
-    color: var(--primary-h1-color);
-    margin-bottom: 51px;
+    @include font (65, 70, 600);
+    color: var(--primary-heading-color);
+    margin: 0 0 52px 0;
   }
 
   &-paragraph {
-    max-width: 471px;
+    width: 471px;
     @include font(25, 35);
     color: var(--primary-text-color);
     margin-bottom: 51px;
@@ -37,9 +39,8 @@
 }
 
 .hero-picture {
-  width: 739px;
-  min-height: 509px;
-  
+  max-width: 739px;
+
   img {
     width: 100%;
   }

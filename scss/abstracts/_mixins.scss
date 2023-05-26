@@ -4,20 +4,19 @@
   font-weight: $fw;
 }
 
+// @mixin flexColumn($justify-content, $align-items, $flex-direction: column) {
+//   display: flex;
+//   justify-content: $justify-content;
+//   align-items: $align-items;
+//   flex-direction: $flex-direction;
+// }
 
-
-
-
-
-
-
-
-@mixin flex($justify-content, $flex-direction:row){
-    display: flex;
-    align-items: center;
-    justify-content: $justify-content;
-    flex-direction: $flex-direction;
-}
+// @mixin flex($justify-content, $align-items, $flex-direction: row) {
+//   display: flex;
+//   align-items: $align-items;
+//   justify-content: $justify-content;
+//   flex-direction: $flex-direction;
+// }
 
 
 // media

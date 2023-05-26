@@ -1,36 +1,39 @@
 @use "../abstracts/mixins" as *;
 
 .team-inner {
-margin-bottom: 150px;
+  margin-bottom: 150px;
 
-&-heading {
-@include font(50, 60, 600);
+  &-heading {
+    @include font(50, 60, 600);
     margin-bottom: 92px;
-}
+  }
 }
 
 .team-items {
-@include flex(space-between);
-align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .team-item {
-max-width: 409px;
+  width: 409px;
 
-&-image {
+  &-image {
     width: 179px;
     height: 201px;
     margin-bottom: 48px;
+  }
 
-}
+  &-heading {
+    @include font(30, 40, 600);
+    color: var(--primary-heading-color);
+    margin-bottom: 34px;
+  }
 
-&-heading {
-     @include font(30, 40, 600);
-     margin-bottom: 34px;
-}
-
-&-paragraph {
+  &-paragraph {
+    min-width: 409px;
     @include font(20, 30);
+    color: var(--primary-text-color);
     margin-bottom: 25px;
-}
+  }
 }

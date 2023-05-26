@@ -4,23 +4,28 @@
   width: 100%;
   min-height: 95px;
   border-bottom: 1px solid #cccccc;
-  @include flex(center);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &-inner {
-    @include flex(space-between);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 }
 
-
 .header-nav {
-  @include flex(space-between);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &-logo {
     display: block;
     width: 100%;
     max-width: 130px;
-    height: 28px;
+    min-height: 28px;
     margin-right: 52px;
 
     &:hover {
@@ -28,7 +33,9 @@
     }
   }
   &-list {
-    @include flex(center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &-item {
@@ -42,6 +49,10 @@
     color: var(--header-link-color);
     text-decoration: none;
   }
+}
+
+.header-buttons .btn-outline {
+  margin-right: 8px;
 }
 
 .burger-icon {
@@ -72,7 +83,6 @@
 //     width: 40px;
 //     height: 28px;
 //     @include flex(space-between, column);
-    
 
 //     &::before,
 //     &::after {

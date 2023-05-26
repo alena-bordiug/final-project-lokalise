@@ -5,7 +5,9 @@
 }
 
 .product {
-  @include flex(space-between);
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
 
   &:not(:last-child) {
     margin-bottom: 255px;
@@ -13,11 +15,11 @@
 }
 
 .product-content {
-  max-width: 500px;
+  width: 500px;
 
   &-heading {
     @include font(50, 60, 600);
-    color: var(--primary-text-color);
+    color: var(--primary-heading-color);
     margin-bottom: 30px;
   }
 
@@ -34,7 +36,6 @@
 
 .product-picture {
   max-width: 632px;
-  min-height: 632px;
 
   img {
     width: 100%;
