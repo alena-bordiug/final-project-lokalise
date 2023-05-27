@@ -3,7 +3,7 @@
 .team-inner {
   margin-bottom: 150px;
 
-  &-heading {
+  &__heading {
     @include font(50, 60, 600);
     margin-bottom: 92px;
   }
@@ -16,22 +16,26 @@
 .team-item {
   width: 409px;
 
-  &-image {
+  &__image {
     width: 179px;
     height: 201px;
     margin-bottom: 48px;
   }
 
-  &-heading {
+  &__heading {
     @include font(30, 40, 600);
     color: var(--primary-heading-color);
     margin-bottom: 34px;
   }
 
-  &-paragraph {
+  &__paragraph {
     min-width: 409px;
     @include font(20, 30);
     color: var(--primary-text-color);
     margin-bottom: 25px;
+  }
+
+  &__link {
+    color: var(--primary-text-color);
   }
 }

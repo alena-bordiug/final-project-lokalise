@@ -11,9 +11,9 @@
   <body>
     <!-- header -->
     <header id="header" class="header">
-      <div class="header-inner container">
-        <div class="header-nav">
-          <a href="#" class="header-nav-logo"
+      <div class="header__inner container">
+        <div class="header-nav__wrapper">
+          <a href="#" class="logo header-nav__logo"
             ><svg
               width="130"
               height="28"
@@ -46,30 +46,29 @@
                   <path d="M0 0h130v28H0z" fill="#fff" />
                 </clipPath>
               </defs></svg></a>
-          <nav class="nav">
-            <ul class="header-nav-list">
-              <li class="header-nav-item">
-                <a href="#product" class="header-nav-link">Product</a>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="#product" class="header-nav__link">Product</a>
               </li>
-              <li class="header-nav-item">
-                <a href="#features" class="header-nav-link">Features</a>
+              <li class="header-nav__item">
+                <a href="#features" class="header-nav__link">Features</a>
               </li>
-              <li class="header-nav-item">
-                <a href="#pricing" class="header-nav-link">Pricing</a>
+              <li class="header-nav__item">
+                <a href="#pricing" class="header-nav__link">Pricing</a>
               </li>
-              <li class="header-nav-item">
-                <a href="#case-studies" class="header-nav-link">Case studies</a>
+              <li class="header-nav__item">
+                <a href="#case-studies" class="header-nav__link"
+                  >Case studies</a
+                >
               </li>
-              <li class="header-nav-item">
-                <a href="#resources" class="header-nav-link">Resources</a>
+              <li class="header-nav__item">
+                <a href="#resources" class="header-nav__link">Resources</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="header-buttons">
-          <button id="burger-icon" class="burger-icon">
-            <span class="burger-icon-inner"></span>
-          </button>
+        <div class="header__buttons buttons">
           <a href="#" class="btn btn-s btn-outline">Log in</a>
           <a href="#" class="btn btn-s btn-contained">Try it free</a>
         </div>
@@ -77,35 +76,37 @@
     </header>
     <main class="main">
       <!-- hero section -->
-      <section class="hero-section container">
-        <div class="hero-content">
-          <h1 class="hero-content-heading">
-            Accelerate localization from code to delivery
-          </h1>
-          <p class="hero-content-paragraph">
-            A localization and translation management platform for agile teams.
-            Embrace automation, workflow transparency, and fast project
-            delivery.
-          </p>
-          <div class="hero-content-buttons">
-            <a href="#" class="btn btn-l btn-contained">Try it free</a>
-            <a href="#" class="btn btn-l btn-outline">Book a demo</a>
+      <section class="hero">
+        <div class="hero-inner container">
+          <div class="hero-inner__content">
+            <h1 class="hero-inner__heading">
+              Accelerate localization from code to delivery
+            </h1>
+            <p class="hero-inner__paragraph">
+              A localization and translation management platform for agile
+              teams. Embrace automation, workflow transparency, and fast project
+              delivery.
+            </p>
+            <div class="hero-inner__buttons">
+              <a href="#" class="btn btn-l btn-contained">Try it free</a>
+              <a href="#" class="btn btn-l btn-outline">Book a demo</a>
+            </div>
+            <span class="hero-inner__comment"
+              >Try all features for 14 days · No credit card required</span
+            >
           </div>
-          <span class="hero-content-comment"
-            >Try all features for 14 days · No credit card required</span
-          >
-        </div>
-        <div class="hero-picture">
-          <img src="img/pictures/main-image.png" alt="picture" />
+          <div class="hero-picture">
+            <img src="img/pictures/main-image.png" alt="picture" />
+          </div>
         </div>
       </section>
       <!-- companies section -->
-      <section class="companies-section">
+      <section class="companies companies__section">
         <div class="companies-inner container">
-          <h2 class="companies-inner-heading">
+          <h2 class="companies-inner__heading">
             The preferred localization tool of 1500+ companies
           </h2>
-          <div class="companies-inner-logos">
+          <div class="companies-inner__logos">
             <img
               src="img/logos/companies-logo/specialized-logo.png"
               alt="specialized"
@@ -125,155 +126,148 @@
         </div>
       </section>
       <!-- products section -->
-      <section class="products-section">
+      <section class="products">
         <div class="products-inner container">
-          <div class="product">
+          <div class="product-item">
             <div class="product-content">
-              <h2 class="product-content-heading">
+              <h2 class="product-content__heading">
                 Control the localization process
               </h2>
-              <p class="product-content-paragraph">
+              <p class="product-content__paragraph">
                 Collaborate with your team in a single workspace. Add and assign
-                <a href="#" class="paragraph-link">tasks</a>, track progress,
-                and enjoy a seamless localization workflow where you know who is
-                doing what and when.
+                <a href="#" class="product-content__link">tasks</a>, track
+                progress, and enjoy a seamless localization workflow where you
+                know who is doing what and when.
               </p>
-              <a href="#" class="btn text-btn"
-                >Start now</a
-              >
+              <a href="#" class="btn text-btn">Start now</a>
             </div>
             <div class="product-picture">
               <img src="img/items-images/item-image-1.png" alt="image1" />
             </div>
           </div>
-          <div class="product">
+          <div class="product-item">
             <div class="product-picture">
               <img src="img/items-images/item-image-2.png" alt="image2" />
             </div>
             <div class="product-content">
-              <h2 class="product-content-heading">Shorten time to market</h2>
-              <p class="product-content-paragraph">
+              <h2 class="product-content__heading">Shorten time to market</h2>
+              <p class="product-content__paragraph">
                 Localize your product in parallel with the development cycle.
-                Use the <a href="#" class="paragraph-link">Adobe XD</a>,
-                <a href="#" class="paragraph-link">Figma</a>, and
-                <a href="#" class="paragraph-link">Sketch</a> plugins to start
-                working on translations as soon as the product design is ready.
-                No more idle waiting.
+                Use the <a href="#" class="product-content__link">Adobe XD</a>,
+                <a href="#" class="product-content__link">Figma</a>, and
+                <a href="#" class="product-content__link">Sketch</a> plugins to
+                start working on translations as soon as the product design is
+                ready. No more idle waiting.
               </p>
-              <a href="#" class="btn text-btn"
-                >Start now</a
-              >
+              <a href="#" class="btn text-btn">Start now</a>
             </div>
           </div>
-          <div class="product">
+          <div class="product-item">
             <div class="product-content">
-              <h2 class="product-content-heading">Ensure quality</h2>
-              <p class="product-content-paragraph">
+              <h2 class="product-content__heading">Ensure quality</h2>
+              <p class="product-content__paragraph">
                 Use built-in tools — e.g.
-                <a href="#" class="paragraph-link">translation memory</a>,
-                machine translation, and
-                <a href="#" class="paragraph-link">QA checks</a> — to enhance
-                the quality and cohesion of translations. Add product
-                <a href="#" class="paragraph-link">screenshots</a> for context
-                and use the
-                <a href="#" class="paragraph-link">in-context editors</a> for
-                instant previews.
+                <a href="#" class="product-content__link">translation memory</a
+                >, machine translation, and
+                <a href="#" class="product-content__link">QA checks</a> — to
+                enhance the quality and cohesion of translations. Add product
+                <a href="#" class="product-content__link">screenshots</a> for
+                context and use the
+                <a href="#" class="product-content__link">in-context editors</a>
+                for instant previews.
               </p>
-              <a href="#" class="btn text-btn"
-                >Start now</a
-              >
+              <a href="#" class="btn text-btn">Start now</a>
             </div>
             <div class="product-picture">
               <img src="img/items-images/item-image-3.png" alt="image3" />
             </div>
           </div>
-          <div class="product">
+          <div class="product-item">
             <div class="product-picture">
               <img src="img/items-images/item-image-4.png" alt="image4" />
             </div>
             <div class="product-content">
-              <h2 class="product-content-heading">Less work for developers</h2>
-              <p class="product-content-paragraph">
+              <h2 class="product-content__heading">Less work for developers</h2>
+              <p class="product-content__paragraph">
                 Eliminate the hassle of localization and let developers get back
                 to their main tasks. Save hours with the powerful
-                <a href="#" class="paragraph-link">API</a>,
-                <a href="#" class="paragraph-link">CLI</a>,
-                <a href="#" class="paragraph-link">mobile SDKs</a>, and
-                integrations with <a href="#" class="paragraph-link">GitHub</a>,
-                <a href="#" class="paragraph-link">Bitbuckets</a>,
-                <a href="#" class="paragraph-link">JIRA</a>, and more.
+                <a href="#" class="product-content__link">API</a>,
+                <a href="#" class="product-content__link">CLI</a>,
+                <a href="#" class="product-content__link">mobile SDKs</a>, and
+                integrations with
+                <a href="#" class="product-content__link">GitHub</a>,
+                <a href="#" class="product-content__link">Bitbuckets</a>,
+                <a href="#" class="product-content__link">JIRA</a>, and more.
               </p>
-              <a href="#" class="btn text-btn"
-                >Start now</a
-              >
+              <a href="#" class="btn text-btn">Start now</a>
             </div>
           </div>
         </div>
       </section>
       <!-- benefit section -->
-      <section class="benefit-section">
+      <section class="benefit benefit__section">
         <div class="benefit-inner container">
-          <h2 class="benefit-inner-heading">
+          <h2 class="benefit-inner__heading">
             What can you localize with Lokalise?
           </h2>
-          <div class="benefit-inner-items">
+          <div class="benefit-items">
             <div class="benefit-item">
-              <div class="benefit-item-image">
+              <div class="benefit-item__image">
                 <img src="img/icons/web.png" alt="web-image" />
               </div>
-              <span class="benefit-item-heading">Web apps</span>
-              <p class="benefit-item-paragraph">
+              <span class="benefit-item__heading">Web apps</span>
+              <p class="benefit-item__paragraph">
                 Any kind of web apps — backend, frontend, single page, blogs —
                 you name it.
               </p>
             </div>
             <div class="benefit-item">
-              <div class="benefit-item-image">
+              <div class="benefit-item__image">
                 <img src="img/icons/mobile.png" alt="mobile-image" />
               </div>
-              <span class="benefit-item-heading">Mobile apps</span>
-              <p class="benefit-item-paragraph">
+              <span class="benefit-item__heading">Mobile apps</span>
+              <p class="benefit-item__paragraph">
                 Upload any mobile platform language files. Embed
-                <a href="#" class="paragraph-link">Lokalise iOS SDK</a> or
-                <a href="#" class="paragraph-link">Lokalise Android SDK</a> if
+                <a href="#" class="benefit-item__link">Lokalise iOS SDK</a> or
+                <a href="#" class="benefit-item__link">Lokalise Android SDK</a> if
                 you prefer.
               </p>
             </div>
             <div class="benefit-item">
-              <div class="benefit-item-image">
+              <div class="benefit-item__image">
                 <img src="img/icons/games.png" alt="games-image" />
               </div>
-              <span class="benefit-item-heading">Games</span>
-              <p class="benefit-item-paragraph paragraph-small">
+              <span class="benefit-item__heading">Games</span>
+              <p class="benefit-item__paragraph benefit-item__paragraph_small">
                 Our cloud software is trusted by many leading game developers
                 around the world.
               </p>
             </div>
             <div class="benefit-item">
-              <div class="benefit-item-image">
+              <div class="benefit-item__image">
                 <img src="img/icons/documents.png" alt="documents-image" />
               </div>
-              <span class="benefit-item-heading">Documents</span>
-              <p class="benefit-item-paragraph">
+              <span class="benefit-item__heading">Documents</span>
+              <p class="benefit-item__paragraph">
                 Upload your DOCX and static HTML files.
               </p>
             </div>
             <div class="benefit-item">
-              <div class="benefit-item-image">
+              <div class="benefit-item__image">
                 <img src="img/icons/marketing.png" alt="marketing-image" />
               </div>
-              <span class="benefit-item-heading">Marketing e-mails</span>
-              <p class="benefit-item-paragraph">
+              <span class="benefit-item__heading">Marketing e-mails</span>
+              <p class="benefit-item__paragraph">
                 Integrate with Salesforce Marketing Cloud (coming soon) or
                 translate static e-mails.
               </p>
             </div>
             <div class="benefit-item">
-              <div class="benefit-item-image">
+              <div class="benefit-item__image">
                 <img src="img/icons/lot.png" alt="web-image" />
               </div>
-              <span class="benefit-item-heading">IoT</span>
-              <p class="benefit-item-paragraph">
+              <span class="benefit-item__heading">IoT</span>
+              <p class="benefit-item__paragraph">
                 We support most popular localization file formats.
               </p>
             </div>
@@ -281,103 +275,97 @@
         </div>
       </section>
       <!-- team section -->
-      <section class="team-section">
+      <section class="team">
         <div class="team-inner container">
-          <h2 class="team-inner-heading">
+          <h2 class="team-inner__heading">
             Boost your localization team’s productivity tenfold
           </h2>
           <div class="team-items">
             <div class="team-item">
-              <div class="team-item-image">
+              <div class="team-item__image">
                 <img src="img/icons/managers.png" alt="mangers-image" />
               </div>
-              <h3 class="team-item-heading">Managers</h3>
-              <p class="team-item-paragraph">
+              <h3 class="team-item__heading">Managers</h3>
+              <p class="team-item__paragraph">
                 Update existing and launch new features and products while
                 simultaneously localizing them in multiple languages. Streamline
                 your team's workflow, maximize productivity, and speed up
                 expansion to other markets.
               </p>
-              <a href="#" class="btn text-btn-underlined"
-                >Learn more</a
-              >
+              <a href="#" class="btn text-btn-underlined">Learn more</a>
             </div>
             <div class="team-item">
-              <div class="team-item-image">
+              <div class="team-item__image">
                 <img src="img/icons/developers.png" alt="developer-image" />
               </div>
-              <h3 class="team-item-heading">Developers</h3>
-              <p class="team-item-paragraph">
+              <h3 class="team-item__heading">Developers</h3>
+              <p class="team-item__paragraph">
                 Set up an integration with your code repository or your own
                 custom SDK via Lokalise's
-                <a href="#" class="paragraph-link">powerful API</a>. Do that
+                <a href="#" class="team-item__link">powerful API</a>. Do that
                 once, and every time you make changes in the code, they'll be
                 automatically imported to Lokalise for translation.
               </p>
-              <a href="#" class="btn text-btn-underlined"
-                >Learn more</a
-              >
+              <a href="#" class="btn text-btn-underlined">Learn more</a>
             </div>
             <div class="team-item">
-              <div class="team-item-image">
+              <div class="team-item__image">
                 <img src="img/icons/translators.png" alt="translator-image" />
               </div>
-              <h3 class="team-item-heading">Translators</h3>
-              <p class="team-item-paragraph">
+              <h3 class="team-item__heading">Translators</h3>
+              <p class="team-item__paragraph">
                 Eliminate double-work and neverending revisions with visual
                 context (screenshots) and live previews. Improve the quality and
                 speed of your translations with built-in CAT tools, like
                 autocomplete, inline machine translation, and translation
                 memory.
               </p>
-              <a href="#" class="btn text-btn-underlined"
-                >Learn more</a
-              >
+              <a href="#" class="btn text-btn-underlined">Learn more</a>
             </div>
           </div>
         </div>
       </section>
       <!-- about company section -->
-      <section class="about-company-section">
-        <div class="lokalise-history">
-          <div class="lokalise-history-inner container">
-            <div class="lokalise-history-content">
-              <p class="lokalise-history-content-paragraph">
+      <section class="about-company">
+        <div class="history">
+          <div class="history__inner container">
+            <div class="history-content">
+              <p class="history-content__paragraph">
                 “Lokalise has turned a task we were dreading into an absolute
                 pleasure. Great platform, intuitive UX, powerful API. The
                 automatic text recognition for screenshots has been a lifesaver,
                 and over-the-air updates are the icing on the cake.”
               </p>
-              <span class="lokalise-history-content-name"
+              <span class="history-content__name"
                 >Edward Cooper, Chief Mobile Officer</span
               >
-              <div class="lokalise-history-content-logo">
+              <div class="history-content__logo">
                 <img
                   src="img/logos/companies-logo/revolut-logo.png"
                   alt="revolut-logo"
                 />
               </div>
             </div>
-            <div class="lokalise-history-photo">
+            <div class="history-photo">
               <img src="img/photos/chief-photo.png" alt="chief-photo" />
             </div>
           </div>
         </div>
         <div class="reviews">
           <div class="reviews-inner container">
-            <div class="reviews-inner-title">
-              <div class="reviews-inner-image">
+            <div class="reviews-inner__title">
+              <div class="reviews-inner__image">
                 <img src="img/icons/cake.png" alt="cake-image" />
               </div>
-              <h4 class="reviews-inner-heading">
+              <h4 class="reviews-inner__heading">
                 The most-loved translation management software
               </h4>
             </div>
-            <div class="reviews-inner-logos">
-              <div class="reviews-inner-logo">
+            <div class="reviews-inner__logos">
+              <div class="reviews-inner__logo">
                 <img src="img/logos/companies-logo/c-logo.png" alt="c-logo" />
               </div>
-              <div class="reviews-inner-logo">
+              <div class="reviews-inner__logo">
                 <img
                   src="img/logos/companies-logo/captera-logo.png"
                   alt="captera-logo"
@@ -388,35 +376,31 @@
         </div>
       </section>
       <!-- integration section -->
-      <section class="integration-section">
+      <section class="integration">
         <div class="integration-inner container">
-          <h5 class="integration-inner-heading">
+          <h5 class="integration-inner__heading">
             Integrate Lokalise with your work tools
           </h5>
-          <span class="integration-inner-paragraph"
+          <span class="integration-inner__paragraph"
             >Automate processes, eliminate routine tasks, and track progress
             with ease.</span
           >
-          <div class="integration-inner-image">
+          <div class="integration-inner__image">
             <img src="img/pictures/final-image.png" alt="image" />
           </div>
-          <a href="#" class="btn btn-l btn-contained"
-            >See all integrations</a
-          >
+          <a href="#" class="btn btn-l btn-contained">See all integrations</a>
         </div>
       </section>
       <!-- proposition section -->
-      <section class="proposition-section">
+      <section class="proposition">
         <div class="proposition-inner container">
-          <h5 class="proposition-inner-heading">
+          <h5 class="proposition-inner__heading">
             Localization made easy. Why wait?
           </h5>
-          <span class="proposition-inner-paragraph"
+          <span class="proposition-inner__paragraph"
             >Try for free or let us show you how it works.</span
           >
-           <a href="#" class="btn btn-m btn-contained"
-            >Try it free</a
-          >
+          <a href="#" class="btn btn-m btn-contained">Try it free</a>
         </div>
       </section>
     </main>
@@ -424,137 +408,137 @@
     <footer class="footer">
       <div class="footer-inner container">
         <div class="footer-column">
-          <h6 class="footer-column-heading">Case Studies</h6>
-          <div class="footer-column-picture">
+          <h6 class="footer-column__heading">Case Studies</h6>
+          <div class="footer-column__picture">
             <img src="img/photos/cyclists-photo.png" alt="cyclist-photo" />
           </div>
-          <div class="footer-column-logo">
+          <div class="footer-column__logo">
             <img
               src="img/logos/companies-logo/specialized-logo.png"
               alt="spesialized-logo"
             />
           </div>
-          <span class="footer-column-paragraph"
+          <span class="footer-column__paragraph"
             >Riding towards global success with a 100% teammate enthusiasm</span
           >
           <a href="#" class="footer-column-btn btn text-btn">Read more</a>
         </div>
         <div class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-title">Product</li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">For developers</a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__title">Product</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">For developers</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">For managers</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">For managers</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">For translators</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">For translators</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">For designers</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">For designers</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Integrations</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Integrations</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Security</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Security</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Pricing</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Pricing</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Automations</a>
-            </li>
-          </ul>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-title">Support</li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Contact</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Documentation</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Status</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Product Updates</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">CLI Tool</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">API Reference</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">iOS and Android SDK</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Supported File Formats</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Automations</a>
             </li>
           </ul>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-title">Company</li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">About</a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__title">Support</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Blog</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Documentation</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Careers | We`re Hiring</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Status</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Case Studies</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Product Updates</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Media Kit</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">CLI Tool</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">API Reference</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">iOS and Android SDK</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Supported File Formats</a>
             </li>
           </ul>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-title">Legal</li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Terms of Service</a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__title">Company</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">About</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Privacy Policy</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Blog</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Cookie Policy</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Careers | We`re Hiring</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Privacy Shield</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Case Studies</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">DPA</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Media Kit</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">List of Sub-processors</a>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__title">Legal</li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Terms of Service</a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Candidates Privacy Notice</a>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Cookie Policy</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Privacy Shield</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">DPA</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">List of Sub-processors</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Candidates Privacy Notice</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-holder container">
-        <div class="footer-holder-info">
-          <div class="footer-holder-logo">
+        <div class="footer-holder__info">
+          <div class="footer-holder__logo">
             <a href="#"
               ><img
                 src="img/logos/lokalise-logo/lokalise-logo-dark.png"
                 alt="lokalise logo"
             /></a>
           </div>
-          <span class="footer-holder-paragraph"
+          <span class="footer-holder__paragraph"
             >Localization workflow for your web and mobile apps, games and
             digital content.</span
           >
         </div>
         <div class="footer-copyright">
-          <span class="footer-copyright-content">©2001-2020</span
-          ><span class="footer-copyright-content">All rights reserved.</span>
+          <span class="footer-copyright__content">©2001-2020</span
+          ><span class="footer-copyright__content">All rights reserved.</span>
         </div>
       </div>
     </footer>

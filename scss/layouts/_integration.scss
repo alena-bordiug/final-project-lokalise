@@ -4,14 +4,14 @@
   margin-bottom: 150px;
   @include flex(space-between, center, column);
 
-  &-heading {
+  &__heading {
     @include font(65, 75, 600);
     color: var(--primary-heading-color);
     max-width: 791px;
     text-align: center;
   }
 
-  &-paragraph {
+  &__paragraph {
     display: inline-block;
     @include font(25, 30);
     color: var(--primary-text-color);
@@ -20,7 +20,7 @@
     margin-bottom: 25px;
   }
 
-  &-image {
+  &__image {
     max-width: 1023px;
     margin-bottom: 32px;
     img {

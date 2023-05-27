@@ -8,7 +8,7 @@
   $justify-content,
   $align-items,
   $flex-direction: row,
-  $flex-wrap:no-wrap
+  $flex-wrap:nowrap
 ) {
   display: flex;
   justify-content: $justify-content;

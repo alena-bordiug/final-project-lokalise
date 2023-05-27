@@ -1,10 +1,10 @@
 @use "../abstracts/mixins" as *;
 
-.products-section {
+.products {
   margin-bottom: 150px;
 }
 
-.product {
+.product-item {
   @include flex(space-between, center);
 
   &:not(:last-child) {
@@ -15,21 +15,21 @@
 .product-content {
   width: 500px;
 
-  &-heading {
+  &__heading {
     @include font(50, 60, 600);
     color: var(--primary-heading-color);
     margin-bottom: 30px;
   }
 
-  &-paragraph {
+  &__paragraph {
     @include font(20, 30);
     color: var(--primary-text-color);
     margin-bottom: 30px;
   }
-}
 
-.paragraph-link {
-  color: var(--primary-paragraph-link);
+  &__link {
+    color: var(--primary-paragraph-link);
+  }
 }
 
 .product-picture {

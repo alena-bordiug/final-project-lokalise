@@ -1,32 +1,32 @@
 @use "../abstracts/mixins" as *;
 
-.lokalise-history {
+.history {
   width: 100%;
   background-color: #c9e8f2;
+
+  &__inner {
+    padding: 110px 0 105px 0;
+    @include flex(center, center);
+  }
 }
 
-.lokalise-history-inner {
-  padding: 53px 0 105px 0;
-  @include flex(center, center);
-}
-
-.lokalise-history-content {
+.history-content {
   max-width: 922px;
 
-  &-paragraph {
+  &__paragraph {
     @include font(30, 40);
     margin-bottom: 33px;
     color: var(--primary-text-color);
   }
 
-  &-name {
+  &__name {
     display: inline-block;
     @include font(15, 25);
     color: var(--primary-text-color);
     margin-bottom: 10px;
   }
 
-  &-logo {
+  &__logo {
     width: 116px;
     height: 25px;
     img {
@@ -35,7 +35,7 @@
   }
 }
 
-.lokalise-history-photo {
+.history-photo {
   max-width: 310px;
   img {
     width: 100%;
@@ -54,13 +54,13 @@
   padding: 80px 0;
   @include flex(flex-start, center);
 
-  &-title {
+  &__title {
     @include flex(center, center);
     margin-right: 124px;
     max-width: 704px;
   }
 
-  &-image {
+  &__image {
     max-width: 176px;
     margin-right: 50px;
     img {
@@ -68,13 +68,13 @@
     }
   }
 
-  &-heading {
+  &__heading {
     @include font(35, 50, 600);
     color: var(--primary-text-color);
     width: 461px;
   }
 
-  &-logos {
+  &__logos {
     @include flex(space-around, center);
     border-left: 1px solid #000;
     width: 481px;

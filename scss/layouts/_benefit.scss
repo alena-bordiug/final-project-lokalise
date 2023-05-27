@@ -1,35 +1,38 @@
 @use "../abstracts/mixins" as *;
 
-.benefit-section {
+.benefit {
   width: 100%;
   background-color: var(--secondary-color);
-  margin-bottom: 150px;
+
+  &__section {
+    margin-bottom: 150px;
+  }
 }
 
 .benefit-inner {
   padding: 120px 0;
 
-  &-items {
-    @include flex(space-between, center, row, wrap);
-  }
-
-  &-heading {
+  &__heading {
     text-align: center;
     @include font(50, 60, 600);
     margin-bottom: 58px;
   }
 }
 
+.benefit-items {
+  @include flex(space-between, center, row, wrap);
+}
+
 .benefit-item {
   width: 330px;
   min-height: 294px;
-  @include flex(space-between, center, column);
+  @include flex(flex-start, center, column);
 
   &:not(:nth-last-child(-n + 3)) {
     margin-bottom: 57px;
   }
 
-  &-image {
+  &__image {
     width: 160px;
     min-height: 120px;
     margin-bottom: 26px;
@@ -39,18 +42,21 @@
     }
   }
 
-  &-heading {
+  &__heading {
     @include font(25, 35, 600);
     color: var(--primary-heading-color);
     margin-bottom: 20px;
   }
 
-  &-paragraph {
+  &__paragraph {
     text-align: center;
     @include font(18, 25);
+    &_small {
+      width: 281px;
+    }
   }
-}
 
-.benefit-item .paragraph-small {
-  width: 281px;
+  &__link {
+    color: var(--primary-text-color);
+  }
 }

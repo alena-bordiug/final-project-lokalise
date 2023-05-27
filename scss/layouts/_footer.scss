@@ -14,13 +14,13 @@
 .footer-column {
   max-width: 300px;
 
-  &-heading {
+  &__heading {
     @include font(40, 50, 600);
     color: var(--primary-text-color);
     margin-bottom: 28px;
   }
 
-  &-picture {
+  &__picture {
     width: 300px;
     margin-bottom: 31px;
     img {
@@ -28,7 +28,7 @@
     }
   }
 
-  &-logo {
+  &__logo {
     width: 80px;
     margin-bottom: 11px;
     img {
@@ -36,7 +36,7 @@
     }
   }
 
-  &-paragraph {
+  &__paragraph {
     display: inline-block;
     @include font(20, 30);
     color: var(--primary-text-color);
@@ -47,20 +47,20 @@
 .footer-nav {
   @include flex(space-between, flex-start);
 
-  &-list {
+  &__list {
     width: 187px;
   }
 
-  &-title {
+  &__title {
     @include font(20, 25, 600);
     margin-bottom: 21px;
   }
 
-  &-item {
+  &__item {
     margin-bottom: 15px;
   }
 
-  &-link {
+  &__link {
     @include font(15, 15);
     text-decoration: none;
     color: var(--primary-text-color);
@@ -71,12 +71,12 @@
   padding: 48px 0;
   @include flex(space-between, center);
 
-  &-info {
+  &__info {
     width: 411px;
     @include flex(space-between, center);
   }
 
-  &-logo {
+  &__logo {
     width: 90px;
     margin-right: 14px;
     img {
@@ -84,15 +84,17 @@
     }
   }
 
-  &-paragraph {
+  &__paragraph {
     @include font(12, 15);
     color: var(--primary-text-color);
     width: 311px;
   }
 }
 
-.footer-copyright-content {
-  display: block;
-  @include font(12, 15);
-  color: var(--primary-text-color);
+.footer-copyright {
+  &__content {
+    display: block;
+    @include font(12, 15);
+    color: var(--primary-text-color);
+  }
 }
