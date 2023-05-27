@@ -10,9 +10,7 @@
 }
 
 .team-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  @include flex(space-between, flex-start);
 }
 
 .team-item {

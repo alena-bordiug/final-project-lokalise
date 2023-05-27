@@ -1,25 +1,19 @@
 @use "../abstracts/mixins" as *;
 
 .header {
+  @include flex(center, center);
   width: 100%;
   min-height: 95px;
   border-bottom: 1px solid #cccccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center);
     width: 100%;
   }
 }
 
 .header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
 
   &-logo {
     display: block;
@@ -33,9 +27,7 @@
     }
   }
   &-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
   }
 
   &-item {

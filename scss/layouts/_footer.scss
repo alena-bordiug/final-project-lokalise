@@ -7,9 +7,7 @@
 
 .footer-inner {
   padding: 98px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  @include flex(space-between, flex-start);
   border-bottom: 1px solid #000;
 }
 
@@ -47,10 +45,7 @@
 }
 
 .footer-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  @include flex(space-between, flex-start);
 
   &-list {
     width: 187px;
@@ -74,14 +69,11 @@
 
 .footer-holder {
   padding: 48px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
 
   &-info {
     width: 411px;
-    display: flex;
-    justify-content: center;
+    @include flex(space-between, center);
   }
 
   &-logo {

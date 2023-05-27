@@ -6,11 +6,8 @@
 }
 
 .proposition-inner {
-  padding: 119px 0 334px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 119px 0 161px 0;
+  @include flex(center, center, column);
 
   &-heading {
     @include font(65, 75, 600);

@@ -2,10 +2,7 @@
 
 .integration-inner {
   margin-bottom: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex(space-between, center, column);
 
   &-heading {
     @include font(65, 75, 600);

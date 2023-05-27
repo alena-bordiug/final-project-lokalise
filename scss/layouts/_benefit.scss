@@ -10,10 +10,7 @@
   padding: 120px 0;
 
   &-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex(space-between, center, row, wrap);
   }
 
   &-heading {
@@ -26,10 +23,7 @@
 .benefit-item {
   width: 330px;
   min-height: 294px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+  @include flex(space-between, center, column);
 
   &:not(:nth-last-child(-n + 3)) {
     margin-bottom: 57px;

@@ -7,9 +7,7 @@
 
 .lokalise-history-inner {
   padding: 53px 0 105px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
 }
 
 .lokalise-history-content {
@@ -54,14 +52,10 @@
 
 .reviews-inner {
   padding: 80px 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex(flex-start, center);
 
   &-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     margin-right: 124px;
     max-width: 704px;
   }
@@ -81,11 +75,8 @@
   }
 
   &-logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(space-around, center);
     border-left: 1px solid #000;
     width: 481px;
-    
   }
 }

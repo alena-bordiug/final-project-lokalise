@@ -5,9 +5,7 @@
 }
 
 .product {
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @include flex(space-between, center);
 
   &:not(:last-child) {
     margin-bottom: 255px;

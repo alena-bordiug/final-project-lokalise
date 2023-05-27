@@ -8,11 +8,7 @@
 
 .companies-inner {
   padding: 100px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
+  @include flex(center, center, column);
 
   &-heading {
     @include font(50, 60, 600);
@@ -23,9 +19,6 @@
 
   &-logos {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center);
   }
 }
-
