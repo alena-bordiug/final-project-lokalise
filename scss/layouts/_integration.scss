@@ -1,7 +1,10 @@
 @use "../abstracts/mixins" as *;
 
-.integration-inner {
+.integration-section {
   margin-bottom: 150px;
+}
+
+.integration-inner {
   @include flex(space-between, center, column);
 
   &__heading {

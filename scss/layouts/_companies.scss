@@ -1,10 +1,12 @@
 @use "../abstracts/mixins" as *;
 
+.companies-section {
+  margin-bottom: 90px;
+}
+
 .companies {
   width: 100%;
   background-color: var(--primary-color);
-
-  &__section {margin-bottom: 90px;}
 }
 
 .companies-inner {

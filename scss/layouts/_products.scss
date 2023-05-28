@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as *;
 
-.products {
+.products-section {
   margin-bottom: 150px;
 }
 
@@ -30,7 +30,9 @@
   &__link {
     color: var(--primary-paragraph-link);
 
-    &:hover{color: var(--hover-text-color);}
+    &:hover {
+      color: var(--hover-text-color);
+    }
   }
 }
 

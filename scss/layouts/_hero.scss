@@ -1,9 +1,12 @@
 @use "../abstracts/mixins" as *;
 
-.hero-inner {
-  @include flex(center, center);
+.hero-section {
   padding-top: 97px;
   margin-bottom: 198px;
+}
+
+.hero-inner {
+  @include flex(center, center);
 
   &__content {
     width: 560px;

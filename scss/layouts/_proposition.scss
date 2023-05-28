@@ -25,6 +25,9 @@
 
   & .btn-contained {
     background-color: var(--primary-btn-color-black);
+    &:hover {
+      background-color: #000;
+    }
   }
 }
 

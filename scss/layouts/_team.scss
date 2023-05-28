@@ -1,8 +1,10 @@
 @use "../abstracts/mixins" as *;
 
-.team-inner {
+.team-section {
   margin-bottom: 150px;
+}
 
+.team-inner {
   &__heading {
     @include fontSemibold(50, 60);
     margin-bottom: 92px;
@@ -37,5 +39,9 @@
 
   &__link {
     color: var(--primary-text-color);
+
+    &:hover {
+      color: var(--hover-text-color);
+    }
   }
 }
