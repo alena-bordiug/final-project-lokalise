@@ -5,7 +5,7 @@
   @include flex(space-between, center, column);
 
   &__heading {
-    @include font(65, 75, 600);
+    @include fontSemibold(65, 75);
     color: var(--primary-heading-color);
     max-width: 791px;
     text-align: center;
@@ -13,7 +13,7 @@
 
   &__paragraph {
     display: inline-block;
-    @include font(25, 30);
+    @include fontNormal(25, 30);
     color: var(--primary-text-color);
     max-width: 539px;
     text-align: center;

@@ -12,7 +12,7 @@
   @include flex(center, center, column);
 
   &__heading {
-    @include font(50, 60, 600);
+    @include fontSemibold(50, 60);
     text-align: center;
     width: 720px;
     margin-bottom: 70px;

@@ -4,7 +4,7 @@
   margin-bottom: 150px;
 
   &__heading {
-    @include font(50, 60, 600);
+    @include fontSemibold(50, 60);
     margin-bottom: 92px;
   }
 }
@@ -23,14 +23,14 @@
   }
 
   &__heading {
-    @include font(30, 40, 600);
+    @include fontSemibold(30, 40);
     color: var(--primary-heading-color);
     margin-bottom: 34px;
   }
 
   &__paragraph {
     min-width: 409px;
-    @include font(20, 30);
+    @include fontNormal(20, 30);
     color: var(--primary-text-color);
     margin-bottom: 25px;
   }

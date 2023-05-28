@@ -14,14 +14,14 @@
   max-width: 922px;
 
   &__paragraph {
-    @include font(30, 40);
+    @include fontNormal(30, 40);
     margin-bottom: 33px;
     color: var(--primary-text-color);
   }
 
   &__name {
     display: inline-block;
-    @include font(15, 25);
+    @include fontNormal(15, 25);
     color: var(--primary-text-color);
     margin-bottom: 10px;
   }
@@ -69,7 +69,7 @@
   }
 
   &__heading {
-    @include font(35, 50, 600);
+    @include fontSemibold(35, 50);
     color: var(--primary-text-color);
     width: 461px;
   }

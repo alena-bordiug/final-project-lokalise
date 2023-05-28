@@ -15,7 +15,7 @@
   max-width: 300px;
 
   &__heading {
-    @include font(40, 50, 600);
+    @include fontSemibold(40, 50);
     color: var(--primary-text-color);
     margin-bottom: 28px;
   }
@@ -38,7 +38,7 @@
 
   &__paragraph {
     display: inline-block;
-    @include font(20, 30);
+    @include fontNormal(20, 30);
     color: var(--primary-text-color);
     margin-bottom: 15px;
   }
@@ -52,7 +52,7 @@
   }
 
   &__title {
-    @include font(20, 25, 600);
+    @include fontSemibold(20, 25);
     margin-bottom: 21px;
   }
 
@@ -61,7 +61,7 @@
   }
 
   &__link {
-    @include font(15, 15);
+    @include fontNormal(15, 15);
     text-decoration: none;
     color: var(--primary-text-color);
   }
@@ -85,7 +85,7 @@
   }
 
   &__paragraph {
-    @include font(12, 15);
+    @include fontNormal(12, 15);
     color: var(--primary-text-color);
     width: 311px;
   }
@@ -94,7 +94,7 @@
 .footer-copyright {
   &__content {
     display: block;
-    @include font(12, 15);
+    @include fontNormal(12, 15);
     color: var(--primary-text-color);
   }
 }

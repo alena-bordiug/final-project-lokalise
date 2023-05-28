@@ -1,4 +1,10 @@
-@mixin font($fs, $lh, $fw: normal) {
+
+@mixin fontNormal($fs, $lh) {
+  font-size: $fs + px;
+  line-height: calc($lh/$fs);
+}
+
+@mixin fontSemibold($fs, $lh, $fw: 600) {
   font-size: $fs + px;
   line-height: calc($lh/$fs);
   font-weight: $fw;
@@ -16,6 +22,8 @@
   flex-direction: $flex-direction;
   flex-wrap: $flex-wrap;
 }
+
+
 
 
 // media

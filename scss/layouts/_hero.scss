@@ -11,14 +11,14 @@
 
   &__heading {
     width: 552px;
-    @include font(65, 70, 600);
+    @include fontSemibold(65, 70);
     color: var(--primary-heading-color);
     margin: 0 0 52px 0;
   }
 
   &__paragraph {
     width: 471px;
-    @include font(25, 35);
+    @include fontNormal(25, 35);
     color: var(--primary-text-color);
     margin-bottom: 51px;
   }
@@ -30,7 +30,7 @@
     }
 
     &__comment {
-      @include font(15, 25);
+      @include fontNormal(15, 25);
       color: var(--primary-text-color);
     }
   }

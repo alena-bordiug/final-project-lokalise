@@ -16,13 +16,13 @@
   width: 500px;
 
   &__heading {
-    @include font(50, 60, 600);
+    @include fontSemibold(50, 60);
     color: var(--primary-heading-color);
     margin-bottom: 30px;
   }
 
   &__paragraph {
-    @include font(20, 30);
+    @include fontNormal(20, 30);
     color: var(--primary-text-color);
     margin-bottom: 30px;
   }

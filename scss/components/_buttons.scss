@@ -8,19 +8,19 @@
 }
 
 .btn-s {
-  @include font(16, 45, 600);
+  @include fontSemibold(16, 45);
   width: 120px;
   min-height: 45px;
 }
 
 .btn-m {
-@include font(16, 60, 600);
+@include fontSemibold(16, 60);
   width: 160px;
   min-height: 60px;
 }
 
 .btn-l {
-  @include font(16, 60, 600);
+  @include fontSemibold(16, 60);
   width: 193px;
   min-height: 60px;
 }
@@ -41,14 +41,14 @@
 }
 
 .text-btn {
-  @include font(20, 30, 600);
+  @include fontSemibold(20, 30);
   color: var(--primary-text-btn-color);
   background-color: transparent;
   text-decoration: none;
 }
 
 .text-btn-underlined {
-  @include font(20, 30);
+  @include fontNormal(20, 30);
   color: var(--primary-text-btn-color);
   background-color: transparent;
   text-decoration: underline;

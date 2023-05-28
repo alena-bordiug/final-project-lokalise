@@ -14,7 +14,7 @@
 
   &__heading {
     text-align: center;
-    @include font(50, 60, 600);
+    @include fontSemibold(50, 60);
     margin-bottom: 58px;
   }
 }
@@ -43,14 +43,14 @@
   }
 
   &__heading {
-    @include font(25, 35, 600);
+    @include fontSemibold(25, 35);
     color: var(--primary-heading-color);
     margin-bottom: 20px;
   }
 
   &__paragraph {
     text-align: center;
-    @include font(18, 25);
+    @include fontNormal(18, 25);
     &_small {
       width: 281px;
     }

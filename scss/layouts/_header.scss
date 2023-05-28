@@ -38,7 +38,7 @@
   }
 
   &__link {
-    @include font(15, 20);
+    @include fontNormal(15, 20);
     color: var(--header-link-color);
     text-decoration: none;
     padding: 24px 0;
@@ -55,7 +55,7 @@
     background: url("../../img/icons/icon-arrow.png") right no-repeat;
     background-size: 20%;
     &:hover {
-      color: var(--primary-color);
+      color: var(--hover-text-color);
     }
   }
 }
@@ -93,11 +93,11 @@
 }
 
 .dropdowm-menu-link {
-  @include font(15, 20);
+  @include fontNormal(15, 20);
   text-decoration: none;
   color: var(--primary-text-color);
 
   &:hover {
-    color: var(--primary-color);
+    color: var(--hover-text-color);
   }
 }
