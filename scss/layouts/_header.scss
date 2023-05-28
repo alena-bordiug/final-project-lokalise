@@ -44,23 +44,24 @@
     padding: 24px 0;
 
     &:hover {
-      color: var(--primary-color);
+      color: var(--hover-text-color);
     }
   }
 
   &__link-drop {
-    background: url(../../img/icons/icon-arrow.png);
-    padding-right: 20px;
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: right;
+    padding-right: 18px;
     cursor: pointer;
     display: block;
-
+    background: url("../../img/icons/icon-arrow.png") right no-repeat;
+    background-size: 20%;
     &:hover {
       color: var(--primary-color);
     }
   }
+}
+
+.buttons .btn-outline {
+  margin-right: 8px;
 }
 
 .header-dropdown-menu:hover .dropdown-menu {
@@ -72,32 +73,31 @@
 }
 
 .header-dropdown-menu:hover .header-nav__link-drop {
-  color: var(--primary-color);
+  color: var(--hover-text-color);
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 200px;
+  width: 250px;
   background: #fff;
   box-shadow: 0 0 15px rgba(112, 111, 110, 0.2);
   padding: 25px 25px 10px 25px;
   display: none;
 }
 
-.dropdowm-menu-link {
-  @include font(15, 20);
-  color: var(--primary-text-color);
-  text-decoration: none;
-  display: inline-block;
+.dropdowm-menu-item {
+  display: block;
   margin-bottom: 20px;
 }
 
-.dropdowm-menu-link:hover {
-  color: var(--primary-color);
-}
+.dropdowm-menu-link {
+  @include font(15, 20);
+  text-decoration: none;
+  color: var(--primary-text-color);
 
-.buttons .btn-outline {
-  margin-right: 8px;
+  &:hover {
+    color: var(--primary-color);
+  }
 }
