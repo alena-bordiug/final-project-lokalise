@@ -29,6 +29,8 @@
 
   &__link {
     color: var(--primary-paragraph-link);
+
+    &:hover{color: var(--hover-text-color);}
   }
 }
 
