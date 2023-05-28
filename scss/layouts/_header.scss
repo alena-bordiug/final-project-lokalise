@@ -41,23 +41,26 @@
     @include font(15, 20);
     color: var(--header-link-color);
     text-decoration: none;
-    padding: 25px 0;
+    padding: 24px 0;
 
     &:hover {
       color: var(--primary-color);
     }
   }
-}
 
-.buttons .btn-outline {
-  margin-right: 8px;
-}
+  &__link-drop {
+    background: url(../../img/icons/icon-arrow.png);
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
+    cursor: pointer;
+    display: block;
 
-.icon-arrow::before {
-  content: "\23f7";
-  font-size: 16px;
-  margin-left: 4px;
-  color: var(--primary-icon-arrow-color);
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 }
 
 .header-dropdown-menu:hover .dropdown-menu {
@@ -68,24 +71,33 @@
   position: relative;
 }
 
+.header-dropdown-menu:hover .header-nav__link-drop {
+  color: var(--primary-color);
+}
+
 .dropdown-menu {
   position: absolute;
-  top: 40px;
+  top: 100%;
   left: 0;
   width: 200px;
-  padding: 40px;
   background: #fff;
-  border: 1px solid #000;
-  padding: 25px;
+  box-shadow: 0 0 15px rgba(112, 111, 110, 0.2);
+  padding: 25px 25px 10px 25px;
   display: none;
 }
 
 .dropdowm-menu-link {
   @include font(15, 20);
   color: var(--primary-text-color);
-
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
-.dropdowm-menu-link:hover {color: var(--primary-color);}
+.dropdowm-menu-link:hover {
+  color: var(--primary-color);
+}
+
+.buttons .btn-outline {
+  margin-right: 8px;
+}
