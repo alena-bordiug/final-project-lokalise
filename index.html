@@ -11,7 +11,7 @@
   <body>
     <!-- header -->
     <header id="header" class="header">
-      <div class="header__inner container">
+      <div class="header-inner container">
         <div class="header-nav__wrapper">
           <a href="#" class="logo header-nav__logo"
             ><svg
@@ -56,20 +56,20 @@
                   >Features</span
                 >
                 <ul class="dropdown-menu">
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link">Labore et dolore</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link">Labore et dolore</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link">Duis aute irure</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link">Duis aute irure</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link"> Quis autem</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link"> Quis autem</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link">Excepteur sint</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link">Excepteur sint</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link"
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link"
                       >Consectetur adipiscing</a
                     >
                   </li>
@@ -80,17 +80,17 @@
                   >Pricing</span
                 >
                 <ul class="dropdown-menu">
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link">Lorem Ipsum</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link">Lorem Ipsum</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link">Total pricing</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link">Total pricing</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link"> Consultation</a>
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link"> Consultation</a>
                   </li>
-                  <li class="dropdowm-menu__item">
-                    <a href="#" class="dropdowm-menu__link"
+                  <li class="dropdown-menu__item">
+                    <a href="#" class="dropdown-menu__link"
                       >Lorem ipsum dolar</a
                     >
                   </li>
@@ -107,7 +107,12 @@
             </ul>
           </nav>
         </div>
-        <div class="header__buttons buttons">
+        <div class="header-inner__burger">
+            <button id="burger-icon" class="header-inner__burger-icon">
+              <span class="header-inner__burger-icon-inner"></span>
+            </button>
+          </div>
+        <div class="header-inner__buttons buttons">
           <a href="#" class="btn btn-s btn-outline btn-outline-hover">Log in</a>
           <a href="#" class="btn btn-s btn-contained btn-contained-hover"
             >Try it free</a
@@ -151,22 +156,37 @@
           <h2 class="companies-inner__heading">
             The preferred localization tool of 1500+ companies
           </h2>
-          <div class="companies-inner__logos">
-            <img
-              src="img/logos/companies-logo/specialized-logo.png"
-              alt="specialized"
-            />
-            <img src="img/logos/companies-logo/virgin-logo.png" alt="virgin" />
-            <img src="img/logos/companies-logo/tidal-logo.png" alt="tidal" />
-            <img
-              src="img/logos/companies-logo/revolut-logo.png"
-              alt="revolut"
-            />
-            <img src="img/logos/companies-logo/yelp-logo.png" alt="yelp" />
-            <img
-              src="img/logos/companies-logo/daimler-logo.png"
-              alt="daimler"
-            />
+          <div class="companies-inner__logos carousel">
+            <div>
+              <img
+                src="img/logos/companies-logo/specialized-logo.png"
+                alt="specialized"
+              />
+            </div>
+            <div>
+              <img
+                src="img/logos/companies-logo/virgin-logo.png"
+                alt="virgin"
+              />
+            </div>
+            <div>
+              <img src="img/logos/companies-logo/tidal-logo.png" alt="tidal" />
+            </div>
+            <div>
+              <img
+                src="img/logos/companies-logo/revolut-logo.png"
+                alt="revolut"
+              />
+            </div>
+            <div>
+              <img src="img/logos/companies-logo/yelp-logo.png" alt="yelp" />
+            </div>
+            <div>
+              <img
+                src="img/logos/companies-logo/daimler-logo.png"
+                alt="daimler"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -325,7 +345,7 @@
           <h2 class="team-inner__heading">
             Boost your localization team’s productivity tenfold
           </h2>
-          <div class="team-items">
+          <div class="team-items ">
             <div class="team-item">
               <div class="team-item__image">
                 <img src="img/icons/managers.png" alt="mangers-image" />

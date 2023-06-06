@@ -12,7 +12,7 @@
 }
 
 .footer-column {
-  max-width: 300px;
+  width: 300px;
 
   &__heading {
     @include fontSemibold(40, 50);
@@ -46,9 +46,10 @@
 
 .footer-nav {
   @include flex(space-between, flex-start);
+  width: 850px;
 
   &__list {
-    width: 187px;
+    max-width: 187px;
   }
 
   &__title {
@@ -87,7 +88,9 @@
       width: 100%;
     }
 
-    &:hover {opacity: 0.8;}
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__paragraph {

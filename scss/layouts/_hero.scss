@@ -8,22 +8,18 @@
 .hero-inner {
   @include flex(center, center);
 
-  &__content {
-    width: 560px;
-  }
-
   &__heading {
-    width: 552px;
+    max-width: 552px;
     @include fontSemibold(65, 70);
     color: var(--primary-heading-color);
     margin: 0 0 52px 0;
   }
 
   &__paragraph {
-    width: 471px;
+    max-width: 470px;
     @include fontNormal(25, 35);
     color: var(--primary-text-color);
-    margin-bottom: 51px;
+    margin: 0 0 52px 0;
   }
 
   &__buttons {
@@ -45,4 +41,35 @@
   img {
     width: 100%;
   }
+}
+
+@include tablet {
+  .hero-section {
+    padding-top: 80px;
+    margin-bottom: 150px;
+  }
+
+  .hero-inner {
+    @include flex(center, flex-start, column);
+    width: 100%;
+
+    &__content {
+      margin-bottom: 64px;
+    }
+
+    &__heading {
+      max-width: 860px;
+      margin: 0 0 40px 0;
+    }
+
+    &__paragraph {
+      max-width: 680px;
+      margin: 0 0 40px 0;
+    }
+
+    &__buttons {
+      margin-bottom: 32px;
+    }
+  }
+
 }

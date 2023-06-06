@@ -1,26 +1,33 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Graphik, sans-serif;
-    font-size: 16px;
+  font-family: Graphik, sans-serif;
+  font-size: 16px;
 }
 
 .container {
-    max-width: 1290px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-ul, li {
-    text-decoration: none;
-    list-style: none;
+.container-fluid {
+  width: 100%;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 a {
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
-

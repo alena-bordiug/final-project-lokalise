@@ -31,7 +31,7 @@
   }
 
   &__paragraph {
-    min-width: 409px;
+    max-width: 409px;
     @include fontNormal(20, 30);
     color: var(--primary-text-color);
     margin-bottom: 25px;

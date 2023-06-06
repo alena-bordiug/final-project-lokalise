@@ -11,7 +11,7 @@
 }
 
 .history-content {
-  max-width: 922px;
+  width: 922px;
 
   &__paragraph {
     @include fontNormal(30, 40);
@@ -27,7 +27,7 @@
   }
 
   &__logo {
-    width: 116px;
+    max-width: 116px;
     height: 25px;
     img {
       width: 100%;
@@ -59,8 +59,8 @@
 
   &__title {
     @include flex(center, center);
-    margin-right: 124px;
-    max-width: 704px;
+    margin-right: auto;
+    width: 704px;
   }
 
   &__image {
