@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section {
-  padding-top: 97px;
+  padding-top: 190px;
   margin-bottom: 198px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .hero-picture {
-  max-width: 739px;
+  max-width: 720px;
 
   img {
     width: 100%;
@@ -45,12 +45,12 @@
 
 @include tablet {
   .hero-section {
-    padding-top: 80px;
+    padding-top: 160px;
     margin-bottom: 150px;
   }
 
   .hero-inner {
-    @include flex(center, flex-start, column);
+    @include flex(center, center, column);
     width: 100%;
 
     &__content {
@@ -70,6 +70,10 @@
     &__buttons {
       margin-bottom: 32px;
     }
+  }
+
+  .hero-picture {
+    max-width: 860px;
   }
 
 }

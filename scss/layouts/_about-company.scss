@@ -1,12 +1,12 @@
 @use "../abstracts/mixins" as *;
 
 .history {
-  width: 100%;
   background-color: #c9e8f2;
 
   &__inner {
-    padding: 110px 0 105px 0;
-    @include flex(center, center);
+    padding-top: 110px;
+    padding-bottom: 105px;
+    @include flex(center, flex-start);
   }
 }
 
@@ -15,6 +15,7 @@
 
   &__paragraph {
     @include fontNormal(30, 40);
+    max-width: 896px;
     margin-bottom: 33px;
     color: var(--primary-text-color);
   }
@@ -42,6 +43,14 @@
   }
 }
 
+@include tablet {
+  .history-content {
+    &__paragraph {
+      max-width: 700px;
+    }
+  }
+}
+
 // reviews
 
 .reviews-section {
@@ -54,13 +63,14 @@
 }
 
 .reviews-inner {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   @include flex(flex-start, center);
 
   &__title {
     @include flex(center, center);
     margin-right: auto;
-    width: 704px;
+    max-width: 704px;
   }
 
   &__image {
@@ -74,12 +84,33 @@
   &__heading {
     @include fontSemibold(35, 50);
     color: var(--primary-text-color);
-    width: 461px;
+    max-width: 461px;
   }
 
   &__logos {
     @include flex(space-around, center);
     border-left: 1px solid #000;
     width: 481px;
+  }
+}
+
+@include tablet {
+  .reviews-inner {
+    &__title {
+      margin-right: 24px;
+    }
+
+    &__heading {
+      width: 350px;
+    }
+
+    &__logos {
+      flex-direction: column;
+      width: 350px;
+    }
+
+    &__logo:first-child {
+      margin-bottom: 32px;
+    }
   }
 }

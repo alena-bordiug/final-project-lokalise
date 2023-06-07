@@ -13,7 +13,8 @@
 }
 
 .product-content {
-  width: 500px;
+ width: 540px;
+ padding: 0 24px;
 
   &__heading {
     @include fontSemibold(50, 60);
@@ -37,9 +38,18 @@
 }
 
 .product-picture {
-  max-width: 632px;
+  width: 50%;
 
   img {
     width: 100%;
   }
+}
+
+@include tablet {
+  .product-item {
+
+  &:not(:last-child) {
+    margin-bottom: 200px;
+  }
+}
 }

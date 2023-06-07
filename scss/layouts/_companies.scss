@@ -5,23 +5,36 @@
 }
 
 .companies {
-  width: 100%;
   background-color: var(--primary-color);
 }
 
 .companies-inner {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   @include flex(center, center, column);
 
   &__heading {
     @include fontSemibold(50, 60);
     text-align: center;
-    width: 720px;
+    max-width: 720px;
     margin-bottom: 70px;
   }
 
   &__logos {
     width: 100%;
     @include flex(space-between, center);
+  }
+}
+
+@include tablet {
+  .companies-inner {
+    &__logos {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      margin: 0 32px 24px 0;
+    }
   }
 }

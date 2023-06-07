@@ -45,3 +45,13 @@
     }
   }
 }
+
+@include tablet {
+  .team-items {
+    flex-wrap: wrap;
+  }
+
+  .team-item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}

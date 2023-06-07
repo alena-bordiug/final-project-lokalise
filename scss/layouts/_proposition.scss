@@ -1,12 +1,12 @@
 @use "../abstracts/mixins" as *;
 
 .proposition {
-  width: 100%;
   background-color: var(--primary-color);
 }
 
 .proposition-inner {
-  padding: 119px 0 161px 0;
+  padding-top: 119px;
+  padding-bottom: 161px ;
   @include flex(center, center, column);
 
   &__heading {

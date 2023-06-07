@@ -1,7 +1,6 @@
 @use "../abstracts/mixins" as *;
 
 .benefit {
-  width: 100%;
   background-color: var(--secondary-color);
 }
 
@@ -10,7 +9,8 @@
 }
 
 .benefit-inner {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   &__heading {
     text-align: center;
@@ -63,4 +63,11 @@
       color: var(--hover-text-color);
     }
   }
+}
+
+@include tablet {
+
+  .benefit-items {
+  justify-content: space-around;
+}
 }

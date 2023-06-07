@@ -5,6 +5,8 @@
   width: 100%;
   min-height: 95px;
   border-bottom: 1px solid #cccccc;
+  position: fixed;
+  background-color: #fff;
 }
 
 .header-inner {
@@ -151,4 +153,16 @@
       background: var(--primary-btn-color-black);
     }
   }
+
+  .header-inner.menu-open {
+    position: relative;
+  }
+
+.header.menu-open {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  min-height: 400px;
+}
+
 }

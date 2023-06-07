@@ -1,18 +1,19 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
-  width: 100%;
   background-color: var(--footer-bg-color);
 }
 
 .footer-inner {
-  padding: 98px 0;
+  padding-top: 98px;
+  padding-bottom: 98px;
   @include flex(space-between, flex-start);
   border-bottom: 1px solid #000;
 }
 
 .footer-column {
   width: 300px;
+  margin-right: 32px;
 
   &__heading {
     @include fontSemibold(40, 50);
@@ -50,6 +51,7 @@
 
   &__list {
     max-width: 187px;
+    margin-bottom: 48px;
   }
 
   &__title {
@@ -73,7 +75,8 @@
 }
 
 .footer-holder {
-  padding: 48px 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
   @include flex(space-between, center);
 
   &__info {
@@ -105,5 +108,11 @@
     display: block;
     @include fontNormal(12, 15);
     color: var(--primary-text-color);
+  }
+}
+
+@include tablet {
+  .footer-nav {
+    flex-wrap: wrap;
   }
 }
