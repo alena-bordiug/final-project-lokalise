@@ -1,6 +1,10 @@
 let gulp        = require('gulp'),
     browserSync = require('browser-sync').create(),
-    cleanCSS    = require('gulp-clean-css');
+    cleanCSS = require('gulp-clean-css');
+    
+var concat = require('gulp-concat');
+
+
 
 // Compile sass into CSS & auto-inject into browsers
 
@@ -30,6 +34,13 @@ gulp.task('serve', gulp.series('sass', function() {
 }));
 
 
+// Gulp concat
+
+gulp.task('scripts', function() {
+  return gulp.src('js/*.js')
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest('dist'));
+});
 
 gulp.task('default', gulp.series('serve'));
 
